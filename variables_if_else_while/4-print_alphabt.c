@@ -21,13 +21,12 @@ int main(void)
         putchar(b);
         b++;
     }
-    if (b != 'q' || b != 'e')
+    if (b != 'q' && b != 'e')
     {
         putchar(b);
         b++;
     }
-
-
+    
     putchar('\n');  
 
     return (0);
