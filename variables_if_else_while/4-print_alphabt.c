@@ -5,29 +5,28 @@
 /**
  * main - Entry point
  *
- * Description: Prints the characters from 'a' to 'z' in lowercase
- *              followed by the characters from 'A' to 'Z' in uppercase
- *              using while loops.
+ * Description: Prints the lowercase alphabet from 'a' to 'z',
+ *              excluding the letters 'q' and 'e', followed by a new line.
  *
- * Return: 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char b = 'a';
-    char c = 'z';
+    char letter;
 
-    while (b <= c)
+    /* Loop to print the lowercase alphabet */
+    for (letter = 'a'; letter <= 'z'; letter++)
     {
-        putchar(b);
-        b++;
+        /* Check if the letter is not 'q' or 'e' */
+        if (letter != 'q' && letter != 'e')
+        {
+            putchar(letter);
+        }
     }
-    if (b != 'q' && b != 'e')
-    {
-        putchar(b);
-        b++;
-    }
-    
-    putchar('\n');  
+
+    /* Print a new line */
+    putchar('\n');
 
     return (0);
 }
+
