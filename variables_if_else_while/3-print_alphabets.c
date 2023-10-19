@@ -1,21 +1,21 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - description
+ * Return: Always 0
  */
 int main(void)
 {
-	int num = 48;
+	int a = 97;
+	int z = 122;
+	int i;
 
-	for (; num <= 102; num++)
-	{
-		putchar(num);
-		if (num == 57)
-			num = 96;
-	}
+	for (i = 97 ; i <= z && i >= a ; i++)
+		putchar(i);
 	putchar('\n');
+
+
 	return (0);
+
 }
