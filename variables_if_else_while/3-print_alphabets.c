@@ -7,14 +7,20 @@
  */
 int main(void)
 {
-	int a = 97;
-	int z = 122;
 	int i;
 
-	for (i = 97 ; i <= z && i >= a ; i++)
-		putchar(i);
-	putchar('\n');
 
+	for (i = 0 ; i <= 122 ; i++)
+	{
+		if (i >= 97 && i <= 122)
+			putchar(i);
+	}
+	for (i = 0 ; i <= 122 ; i++)
+	{
+		if (i >= 65 && i <= 90)
+			putchar(i);
+	}
+	putchar('\n');
 
 	return (0);
 
