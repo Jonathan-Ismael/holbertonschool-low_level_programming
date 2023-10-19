@@ -3,8 +3,6 @@
 /**
  * main - Entry point
  *
- * Description: Prints numbers in base 16 (hexadecimal) from 0 to 15 in lowercase.
- *
  * Return: Always 0 (Success)
  */
 int main(void) {
@@ -14,7 +12,7 @@ int main(void) {
         if (i < 10) {
             putchar(i + '0');
         } else {
-            putchar('a' + (i - 10));
+            putchar('a' + (i - 10)); 
         }
     }
 
@@ -22,4 +20,3 @@ int main(void) {
 
     return (0);
 }
-
