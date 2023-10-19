@@ -1,38 +1,21 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
  * main - Entry point
  *
- * Description: Prints the characters from 'a' to 'z' in lowercase
- *              followed by the characters from 'A' to 'Z' in uppercase
- *              using while loops.
- *
- * Return: 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char b = 'a';
-    char c = 'z';
+	int num = 48;
 
-    char d = 'A';
-    char e = 'Z';
-
-    while (b <= c)
-    {
-        putchar(b);
-        b++;
-    }
-
-    while (d <= e)  
-    {
-        putchar(d);
-        d++;
-    }
-
-    putchar('\n');  
-
-    return (0);
+	for (; num <= 102; num++)
+	{
+		putchar(num);
+		if (num == 57)
+			num = 96;
+	}
+	putchar('\n');
+	return (0);
 }
-
