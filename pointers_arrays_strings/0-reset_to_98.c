@@ -1,14 +1,14 @@
-#include <stdlib.h>
+#include "main.h"
 #include <stdio.h>
 
-/*
- * This function updates the value pointed to by the pointer 'n' to 98.
-* _isdigit - check the code.
-* @c: variable
-*
-* Return: Always 0.
-*/
+/**
+ * reset_to_98 - check the code
+ * @n: pointer
+ *
+ * Return: Always 0.
+ */
 void reset_to_98(int *n)
 {
 	*n = 98;
+
 }
