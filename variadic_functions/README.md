@@ -1,1 +1,1 @@
-NEEDS TO BE FILLED
+This is a new project about variadic functions.
