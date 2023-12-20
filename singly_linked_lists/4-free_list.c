@@ -1,21 +1,19 @@
 #include "lists.h"
 
 /**
- * freeList - Function
- * @head: linked list
- * Description: free a linked list
- * Return: .Nothing
+ * free_list - free the memory allocation of the list
+ * @head: the list to free
  */
-void free_list(list_t* head)
+
+void free_list(list_t *head)
 {
-	list_t* current = head;
-	list_t* next;
+	list_t *tmp;
 
-	while (current != NULL)
+	while (head != NULL)
 	{
-		next = current->next;
-		free(current);
-		current = next;
+		tmp = head;
+		head = head->next;
+		free(tmp->str);
+		free(tmp);
 	}
-
 }
